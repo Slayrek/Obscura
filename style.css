@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Oswald:wght@700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  background: #0b0b0b;
+  color: #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 620px;
+  padding: 40px;
+  background: #111; /* чиста площина */
+  border: 2px solid #222; /* строгий каркас */
+}
+
+.title {
+  font-family: 'Oswald', sans-serif;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  color: #d9d9d9;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.label {
+  font-size: 14px;
+  margin-top: 25px;
+  margin-bottom: 5px;
+  display: block;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.input {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #333;
+  background: #0b0b0b;
+  color: #e6e6e6;
+  font-size: 16px;
+}
+
+.input:focus {
+  border-color: #5a6da8; /* стриманий синій акцент */
+  outline: none;
+}
+
+.output {
+  margin-top: 20px;
+  padding: 12px;
+  border: 2px solid #333;
+  background: #0b0b0b;
+  font-size: 16px;
+  color: #f0f0f0;
+  min-height: 50px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.button {
+  flex: 1;
+  padding: 14px 0;
+  border: 2px solid #333;
+  background: #161616;
+  color: #d9d9d9;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.button:hover {
+  border-color: #5a6da8;
+  color: #5a6da8;
+}
+
+.button.secondary {
+  border-color: #7a3d3d; /* бордовий акцент */
+  color: #7a3d3d;
+}
+
+.button.secondary:hover {
+  background: #7a3d3d;
+  color: #fff;
+}

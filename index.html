@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Obscura!</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Oswald:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Obscura!</h1>
+
+    <label for="inputString" class="label">Enter text:</label>
+    <input type="text" id="inputString" class="input">
+
+    <label for="seed" class="label">Seed:</label>
+    <input type="number" id="seed" class="input" onchange="updateSeed()">
+
+    <p class="label result">Result:</p>
+    <div id="encryptedResult" class="output"></div>
+
+    <div class="buttons">
+      <button onclick="encryptAndDisplay()" class="button">Encrypt</button>
+      <button onclick="decryptAndDisplay()" class="button">Decrypt</button>
+      <button onclick="copyToClipboard()" class="button secondary">Copy</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
